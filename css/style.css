@@ -10,6 +10,14 @@
     width: 500px;
 }
 
+input {
+    border: none;
+}
+
+#curso {
+    border: none;
+}
+
 #enviar {
     background-color: rgb(188, 197, 246);
     color:rgb(255, 255, 255);
