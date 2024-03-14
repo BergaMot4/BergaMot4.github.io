@@ -35,21 +35,14 @@ function validar() {
         return false;
     }
 
-    if (matutino.value == "") {
-        document.getElementById("matutino").focus();
-        alert("Não deixe o campo periodo vazio.");
+    if (!matutino.checked && !vespertino.checked && !noturno.checked) {
+        alert("Erro: nenhum turno selecionado!");
+        matutino.focus();
+        document.getElementById("avisos").innerHTML = "Campo periodo não pode ficar em branco!"; 
         return false;
     }
-
-    if (vespertino.value == "") {
-        document.getElementById("vespertino").focus();
-        alert("Não deixe o campo periodo vazio.");
-        return false;
-    }
-
-    if (noturno.value == "") {
-        document.getElementById("noturno").focus();
-        alert("Não deixe o campo periodo vazio.");
+    else {
+        document.getElementById("avisos").innerHTML = "Seu Nome: " + nome.value + ", Sobrenome: " + sobrenome.value + ", Ano de Nascimento: " + nasc.value + ", Profissão: " + curso.value; 
         return false;
     }
 
