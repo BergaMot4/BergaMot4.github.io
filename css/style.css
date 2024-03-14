@@ -1,0 +1,21 @@
+#fundo {
+    background-color: rgb(188, 197, 246);
+}
+
+#caixa {
+    background-color: rgb(99, 119, 219);
+    color: aliceblue;
+    margin-top: 180px;
+    border-radius: 30px;
+    width: 500px;
+}
+
+#enviar {
+    background-color: rgb(188, 197, 246);
+    color:rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+}
