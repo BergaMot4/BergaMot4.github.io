@@ -11,7 +11,7 @@
 <body id="fundo">
     <center>
         <div id="caixa">
-        <form>
+        <form onsubmit="return validar()">
            <h2 id="titulo">Cadastro</h2> 
             Faça seu cadastro aqui. <br>
             ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨<br>
@@ -20,9 +20,9 @@
             Sobrenome: <br>
             <input type="text" name="sobrenome" id="sobrenome"> <br><br>
             Ano de nascimento: <br>
-            <input type="text" name="datanasc" id="datanasc"> <br><br>
+            <input type="text" name="nasc" id="nasc"> <br><br>
             Qual graduação pretende cursar? <br>
-            <select>
+            <select name="curso" id="curso">
                 <option value="med">Medicina</option>
                 <option value="eng">Engenharia</option>
                 <option value="arq">Arquitetura</option>
